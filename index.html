@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quadratic Solver (USolver)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Drawing-3.sketchpad.jpeg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="calculation.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body onload="main()">
+        <header>
+            <h1>USolver</h1>
+        </header>
+        <main>
+            <p id="savedEquations"></p>
+            <button onclick="deleteEquations()" id="remove">Delete🗑️</button>
+            <h2>Standard Form</h2>
+            <div id="standardFormInput">
+                <label>A Value: </label>
+                <input type="text" id="aInputS" placeholder="A Value: ">
+                <br>
+                <label>B Value:</label>
+                <input type="text" id="bInputS" placeholder="B Value: ">
+                <br>
+                <label>C Value:</label>
+                <input type="text" id="cInputS" placeholder="C Value: ">
+            </div>
+            <br>
+            <h3>Equations</h3>
+            <div class="eqInfo">
+                <p id="standardS"></p>
+                <p id="factoredS"></p>
+                <p id="vertexS"></p>
+            </div>
+            <br>
+            <h3>Key Features</h3>
+            <div class="keyFeaturesInfo">
+                <p id="xIntercept1S"></p>
+                <p id="xIntercept2S"></p>
+                <p id="yInterceptS"></p>
+                <p id="vertexStandard"></p>
+                <p id="axisOfSymmS"></p>
+                <p id="domainS"></p>
+                <p id="rangeS"></p>
+                <p id="increasingS"></p>
+                <p id="decreasingS"></p>
+                <p id="positiveS"></p>
+                <p id="negativeS"></p>
+                <p id="enbHP1S"></p>
+                <p id="enbHN2S"></p>
+            </div>
+            <br>
+            <button onclick="calculateFromStandard()">Compute💻</button>
+            <button onclick="saveStandard()">Save💾</button>
+            <p id="xInts"></p>
+            <br>
+            <br>
+            <h2>Factored Form</h2>
+            <div id="factoredFormInput">
+                <label>A Value:</label>
+                <input type="text" id="aInputF" placeholder="A Value: ">
+                <br>
+                <label>X Intercept 1: </label>
+                <input type="text" id="xInt1" placeholder="X Intercept 1: (Larger one)">
+                <br>
+                <label>X Intercept 2: </label>
+                <input type="text" id="xInt2" placeholder="X Intercept 2: (Smaller one)">
+            </div>
+            <br>
+            <h3>Equations</h3>
+            <div class="eqInfo">
+                <p id="standardF"></p>
+                <p id="factoredF"></p>
+                <p id="vertexF"></p>
+            </div>
+            <br>
+            <h3>Key Features</h3>
+            <div class="keyFeaturesInfo">
+                <p id="xIntercept1F"></p>
+                <p id="xIntercept2F"></p>
+                <p id="yInterceptF"></p>
+                <p id="vertexFactored"></p>
+                <p id="axisOfSymmF"></p>
+                <p id="domainF"></p>
+                <p id="rangeF"></p>
+                <p id="increasingF"></p>
+                <p id="decreasingF"></p>
+                <p id="positiveF"></p>
+                <p id="negativeF"></p>
+                <p id="enbHP1F"></p>
+                <p id="enbHN2F"></p>
+            </div>
+            <br>
+            <button onclick="calculateFromFactored()">Compute💻</button>
+            <button onclick="saveFactored()">Save💾</button>
+            <br>
+            <br>
+            <h2>Vertex Form</h2>
+            <div id="vertexFormInput">
+                <label>A Value: </label>
+                <input type="text" id="aInputV" placeholder="A Value: ">
+                <br>
+                <label>Vertex X:</label>
+                <input type="text" id="vertexX" placeholder="Vertex X: ">
+                <br>
+                <label>Vertex Y: </label>
+                <input type="text" id="vertexY" placeholder="Vertex Y: ">
+            </div>
+            <br>
+            <h3>Equations</h3>
+            <div class="eqInfo">
+                <p id="standardV"></p>
+                <p id="factoredV"></p>
+                <p id="vertexV"></p>
+            </div>
+            <br>
+            <h3>Key Features</h3>
+            <div class="keyFeaturesInfo">
+                <p id="xIntercept1V"></p>
+                <p id="xIntercept2V"></p>
+                <p id="yInterceptV"></p>
+                <p id="vertexVertex"></p>
+                <p id="axisOfSymmV"></p>
+                <p id="domainV"></p>
+                <p id="rangeV"></p>
+                <p id="increasingV"></p>
+                <p id="decreasingV"></p>
+                <p id="positiveV"></p>
+                <p id="negativeV"></p>
+                <p id="enbHP1V"></p>
+                <p id="enbHN2V"></p>
+            </div>
+            <br>
+            <button onclick="calculateFromVertex()">Compute💻</button>
+            <button onclick="saveVertex()">Save💾</button>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    font-family: Verdana;
+    background-color: lightgray;
+}
+
+.eqInfo, .keyFeaturesInfo {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#factoredFormInput input {
+    width: 167px;
+}
+
+button {
+    padding: 6px 7px 8px 7px;
+    border: 3px solid darkgreen;
+    color: white;
+    background-color: green;
+    font-size: large;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+button:hover {
+    background-color: rgb(77, 150, 77);
+}
+
+#remove {
+    background-color: red;
+    border-color: maroon;
+    color: white;
+    padding: 6px 7px 8px 7px;
+}
+
+#remove:hover {
+    background-color: rgb(250, 106, 106);
+}
